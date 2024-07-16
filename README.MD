@@ -26,7 +26,7 @@ After evaluating the model, the following metrics were obtained:
 1. **Clone Repository:**
 
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/moamen1358/Abstract-Category-Predictor.git
    cd abstract-category-predictor
    ```
 
@@ -38,6 +38,11 @@ After evaluating the model, the following metrics were obtained:
 
 3. **Download Pre-trained Model:**
    Ensure your pre-trained TensorFlow model (`skimlit_tribrid_model/`) is downloaded and placed in the project directory.
+
+   ```bash
+   !wget https://storage.googleapis.com/ztm_tf_course/skimlit/skimlit_tribrid_model.zip
+   !unzip skimlit_tribrid_model.zip
+   ```
 
 4. **Run FastAPI Application:**
 
@@ -55,10 +60,9 @@ After evaluating the model, the following metrics were obtained:
 6. **Example Response:**
    ```json
    [
-       {"line": "First sentence of the abstract.", "label": "BACKGROUND"},
-       {"line": "Second sentence of the abstract.", "label": "OBJECTIVE"},
-       {"line": "Third sentence of the abstract.", "label": "METHODS"},
-       ...
+     { "line": "First sentence of the abstract.", "label": "BACKGROUND" },
+     { "line": "Second sentence of the abstract.", "label": "OBJECTIVE" },
+     { "line": "Third sentence of the abstract.", "label": "METHODS" }
    ]
    ```
 
